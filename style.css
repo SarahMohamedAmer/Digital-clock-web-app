@@ -1,0 +1,68 @@
+/* Global Styles */
+* {
+  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.246));
+}
+
+body {
+  font-family: 'Cursive';
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("Day light.png") no-repeat center center fixed;
+  background-size: cover;
+  transition: all .5s ease-in-out; 
+}
+
+body.night {
+  background: url("last night.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  border: 5px solid #e2dfdf;
+  border-radius: 100px;
+  transform: scale(1, 1);
+  background-color: #323131;
+  opacity: 0.5;
+}
+
+
+/* Digital Clock Styles */
+#clock {
+  font-size: 100px;
+  font-weight:normal;
+  letter-spacing: 5px;
+  text-shadow: 15px 15px 15px rgb(2, 2, 2);
+  display: inline-block;
+ 
+  
+}
+    
+
+
+/* Night Mode Styles */
+body.night, body.night #clock {
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+body.night #clock {
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+    #clock {
+        font-size: 80px;
+    }
+}
+
