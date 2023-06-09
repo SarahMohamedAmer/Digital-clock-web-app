@@ -8,9 +8,7 @@ function showTime() {
 
     var session = "AM";
 
-    if (h == 0) {
-        h = 12;
-    }
+  
 
     else if(h > 12) {
         h = h - 12;
